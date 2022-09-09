@@ -1,0 +1,2358 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <title>Uddown &#8211; Movie website</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Uddown &raquo; Feed" href="http://localhost/uddown/wordpress/index.php/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Uddown &raquo; Comments Feed" href="http://localhost/uddown/wordpress/index.php/comments/feed/" />
+    <link rel='stylesheet' id='dashicons-css' href='http://localhost/uddown/wordpress/wp-includes/css/dashicons.min.css?ver=6.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='admin-bar-css' href='http://localhost/uddown/wordpress/wp-includes/css/admin-bar.min.css?ver=6.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-block-library-css' href='http://localhost/uddown/wordpress/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+    </style>
+    <link rel='stylesheet' id='toroflix-style-css' href='http://localhost/uddown/wordpress/wp-content/themes/toroflix/style.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='toroflix-fontawesome-css' href='http://localhost/uddown/wordpress/wp-content/themes/toroflix/css/font-awesome.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='toroflix-material-css' href='http://localhost/uddown/wordpress/wp-content/themes/toroflix/css/material.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-fonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C600%2C700&#038;ver=1.0' type='text/css' media='all' />
+    <script type='text/javascript' src='http://localhost/uddown/wordpress/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='http://localhost/uddown/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <link rel="https://api.w.org/" href="http://localhost/uddown/wordpress/index.php/wp-json/" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/uddown/wordpress/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/uddown/wordpress/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.0.2" />
+    <link rel="icon" type="" href="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/f-wTYAZ3Z65-transformed.png">
+
+
+
+    <script type="text/javascript">
+        var tr_arr_casts = "";
+        var tr_arr_directors = "";
+        var tr_arr_countries = "";
+    </script>
+
+    <style type="text/css">
+        .site-title a,
+        .site-description {
+            color: #000000;
+        }
+    </style>
+    <style type="text/css" media="print">
+        #wpadminbar {
+            display: none;
+        }
+    </style>
+    <style type="text/css" media="screen">
+        html {
+            margin-top: 32px !important;
+        }
+
+        @media screen and ( max-width: 782px) {
+            html {
+                margin-top: 46px !important;
+            }
+        }
+    </style>
+
+    <style id="tp_style_css" type="text/css">
+        /**************************/
+
+        /*          General
+        ***************************/
+
+        /*(Main Color)*/
+
+        a:hover,
+        .SearchBtn>i,
+        .Top:before,
+        .TpMvPlay:before,
+        .TPost.B .TPMvCn .TPlay:before,
+        .SrtdBy li a:before,
+        .Clra,
+        .ShareList>li>a,
+        .PlayMovie:hover,
+        .VideoPlayer>span,
+        .OptionBx p:before,
+        .comment-reply-link:before,
+        section>.Top>.Title>span,
+        .widget_categories>ul li:hover>a:before,
+        .Frm-Slct>label:before,
+        .widget span.required,
+        .comment-notes:before,
+        .TPost .Description .CastList li:hover:before,
+        .error-404:before,
+        .widget_recent_comments li:before,
+        .widget_recent_entries li:before,
+        .widget_views li:before,
+        .widget_rss li:before,
+        .widget_meta li:before,
+        .widget_pages li:before,
+        .widget_archive li:before {
+            color: #ffcc00
+        }
+
+        .Tf-Wp.open .MenuBtn i,
+        .owl-dots>div.active>span,
+        #Tf-Wp.open .MenuBtn i,
+        .TpTv,
+        .TPost.C .Top,
+        .TPost.C .Image,
+        .Bgra,
+        .VideoOptions.open+.BtnOptions,
+        .lgtbx-on .VideoPlayer>span.BtnLight {
+            background-color: #ffcc00
+        }
+
+        .widget_nav_menu>div>ul>li[class*="current"],
+        .widget_categories>ul>li:hover,
+        .comment-list .children,
+        blockquote {
+            border-color: #ffcc00
+        }
+
+        .menu-item-has-children>a:after,
+        .SrtdBy:after {
+            border-top-color: #ffcc00
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu {
+                border-top-color: #ffcc00
+            }
+        }
+
+        @media screen and (min-width:62em) {
+            ::-webkit-scrollbar-thumb {
+                background-color: #ffcc00
+            }
+            .menu-item-has-children:hover>.sub-menu {
+                border-top-color: #ffcc00
+            }
+            .menu-item-has-children:after {
+                border-bottom-color: #ffcc00
+            }
+        }
+
+        ::selection {
+            background-color: #ffcc00;
+            color: #fff
+        }
+
+        ::-moz-selection {
+            background-color: #ffcc00;
+            color: #fff
+        }
+
+        /*(Body Background)*/
+
+        body {
+            background-color: #1a191f
+        }
+
+        /*(Text Color)*/
+
+        body {
+            color: #ffffff
+        }
+
+        /*(Links Color)*/
+
+        a,
+        .ShareList.Count .numbr {
+            color: #fff
+        }
+
+        /*(Titles - Color)*/
+
+        .Top>.Title,
+        .Title.Top,
+        .comment-reply-title,
+        #email-notes,
+        .Description h1,
+        .Description h2,
+        .Description h3,
+        .Description h4,
+        .Description h5,
+        .Description h6,
+        .Description legend {
+            color: #fff
+        }
+
+        /**************************/
+
+        /*          Header
+        ***************************/
+
+        /*Background*/
+
+        .Header:after {
+            background-color: #000
+        }
+
+        .BdGradient .Header:after {
+            background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0) 100%)
+        }
+
+        /*Menu*/
+
+        /*(Menu Links Color)*/
+
+        .Menu a,
+        .SearchBtn {
+            color: #fff
+        }
+
+        .MenuBtn i {
+            background-color: #fff
+        }
+
+        /*(Menu Links Color Hover)*/
+
+        .Menu li:hover a {
+            color: #fff
+        }
+
+        @media screen and (min-width:62em) {
+            .Menu [class*="current"]>a,
+            .Header .Menu>ul>li:hover>a {
+                color: #fff
+            }
+        }
+
+        /*(Menu Icons Color)*/
+
+        .Menu li:before,
+        .menu li:before {
+            color: #ffcc00
+        }
+
+        /*(Submenus Brackground)*/
+
+        .Frm-Slct>label,
+        .TPost.B .TPMvCn,
+        .SrtdBy.open .List,
+        .SearchMovies .sol-selection,
+        .trsrcbx,
+        .SearchMovies .sol-no-results,
+        .OptionBx {
+            background-color: #1a191f
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu {
+                background-color: #1a191f
+            }
+        }
+
+        @media screen and (min-width:62em) {
+            .sub-menu {
+                background-color: #1a191f
+            }
+        }
+
+        /*(Submenus Text Color)*/
+
+        .Frm-Slct>label,
+        .TPost.B .TPMvCn,
+        .OptionBx {
+            color: #818083
+        }
+
+        /*(Submenus Links Color)*/
+
+        .TPost.B .TPMvCn a,
+        .OptionBx div,
+        .sub-menu a,
+        .Menu li:hover .sub-menu li>a {
+            color: #fff !important
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu a {
+                color: #fff
+            }
+        }
+
+        /*(Submenus Links Color Hover)*/
+
+        .TPost.B .TPMvCn a:hover,
+        .OptionBx a:hover,
+        .sub-menu li:hover a,
+        .Menu li:hover .sub-menu li:hover>a {
+            color: #fff !important
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu li:hover a {
+                color: #fff
+            }
+        }
+
+        /**************************/
+
+        /*          Banner Top
+        ***************************/
+
+        /*(Banner Top Background)*/
+
+        .TPost.A .Image:after,
+        .TPost .Description .CastList:before {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1a191f 100%)
+        }
+
+        /*(Banner Top Links Color)*/
+
+        .MovieListSldCn .TPost.A .TPMvCn div a,
+        .MovieListSldCn .TPost.A .TPMvCn .Title {
+            color: #e0e0e0
+        }
+
+        /*(Banner Top Links Color Hover)*/
+
+        .MovieListSldCn .TPost.A .TPMvCn div a:hover,
+        .MovieListSldCn .TPost.A .TPMvCn .Title:hover {
+            color: #e0e0e0
+        }
+
+        /*(Banner Top Text Color)*/
+
+        .MovieListSldCn .TPost.A {
+            color: #e0e0e0
+        }
+
+        /**************************/
+
+        /*          Forms
+        ***************************/
+
+        /*(Buttons Background)*/
+
+        .Button,
+        a.Button,
+        a.Button:hover,
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .BuyNow>a,
+        .sol-selected-display-item,
+        .trsrclst>li,
+        .ShareList>li>a:hover,
+        .TPost.B .Image .Qlty {
+            background-color: #ffcc00
+        }
+
+        .ShareList>li>a {
+            border-color: #ffcc00
+        }
+
+        /*(Buttons Background Hover)*/
+
+        .Button:hover,
+        .Button:hover,
+        button:hover,
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        .BuyNow>a:hover {
+            background-color: #ffcc00
+        }
+
+        /*(Buttons Text Color)*/
+
+        .Button,
+        a.Button,
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .BuyNow>a,
+        .sol-selected-display-item,
+        .trsrclst>li,
+        .ShareList>li>a:hover,
+        .TPost.B .Image .Qlty {
+            color: #fff
+        }
+
+        /*(Buttons Text Color Hover)*/
+
+        .Button:hover,
+        .Button:hover,
+        button:hover,
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        .BuyNow>a:hover {
+            color: #fff
+        }
+
+        /*(Form controls Background)*/
+
+        input,
+        textarea,
+        select,
+        .Form-Select label,
+        .OptionBx p {
+            background-color: #2a292f
+        }
+
+        /*(Form controls Text Color)*/
+
+        input,
+        textarea,
+        select,
+        .Form-Select label,
+        .OptionBx p {
+            color: #fff
+        }
+
+        /**************************/
+
+        /*          Widgets
+        ***************************/
+
+        /*(Widget - Backgorund)*/
+
+        aside .Wdgt {
+            background-color: #212026
+        }
+
+        /*(Widget Title - Backgorund)*/
+
+        aside .Wdgt>.Title {
+            background-color: #19181d
+        }
+
+        /*(Widget Title - Color)*/
+
+        aside .Wdgt>.Title {
+            color: #fff
+        }
+
+        /*(Widget Text Color)*/
+
+        aside .Wdgt {
+            color: #818083
+        }
+
+        /*(Widget Links Color)*/
+
+        aside .Wdgt a {
+            color: #fff
+        }
+
+        /*(Widget Links Color Hover)*/
+
+        aside .Wdgt a:hover {
+            color: #ffcc00
+        }
+
+        /**************************/
+
+        /*          Tables
+        ***************************/
+
+        /*(Table Title Background)*/
+
+        thead tr {
+            background-color: #ffcc00
+        }
+
+        /*(Table Title Text)*/
+
+        thead tr {
+            color: #fff
+        }
+
+        /*(Table Cell Background)*/
+
+        td {
+            background-color: #26252a
+        }
+
+        .SeasonBx {
+            border-bottom-color: #26252a
+        }
+
+        /*(Table Cell Background Hover )*/
+
+        tr:hover>td,
+        tr.Viewed td {
+            background-color: #313036
+        }
+
+        /*(Table Cell Text)*/
+
+        td {
+            color: #818083
+        }
+
+        /*(Table Cell Links)*/
+
+        td a,
+        .TPTblCnMvs td:first-child,
+        .TPTblCnMvs td:nth-child(2),
+        .TPTblCnMvs td:nth-child(3) {
+            color: #fff
+        }
+
+        /*(Table Cell Links Hover)*/
+
+        td a:hover {
+            color: #ffcc00
+        }
+
+        /**************************/
+
+        /*          Pagination
+        ***************************/
+
+        /*Pagination Links Background*/
+
+        .menu-azlist ul.sub-menu a,
+        .AZList>li>a,
+        .wp-pagenavi a,
+        .wp-pagenavi span,
+        .nav-links a,
+        .nav-links span,
+        .tagcloud a {
+            background-color: #313036
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu>ul>li {
+                border-bottom-color: #313036
+            }
+            .Menu .sub-menu a {
+                background-color: #313036
+            }
+        }
+
+        /*Pagination Links Background Hover*/
+
+        .menu-azlist ul.sub-menu a:hover,
+        .menu-azlist [class*="current"]>a,
+        .AZList a:hover,
+        .AZList .Current a,
+        .wp-pagenavi a:hover,
+        .wp-pagenavi span.current,
+        .nav-links a:hover,
+        .nav-links [class*="current"],
+        .tagcloud a:hover {
+            background-color: #ffcc00
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu .sub-menu a:hover {
+                background-color: #ffcc00
+            }
+        }
+
+        /*Pagination Links Color*/
+
+        .menu-azlist ul.sub-menu a,
+        .AZList>li>a,
+        .wp-pagenavi a,
+        .wp-pagenavi span,
+        .tagcloud a {
+            color: #fff !important
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu .sub-menu a {
+                color: #fff !important
+            }
+        }
+
+        /*Pagination Links Color Hover*/
+
+        .Menu li.menu-azlist:hover ul.sub-menu a:hover,
+        .menu-azlist [class*="current"]>a,
+        .AZList a:hover,
+        .AZList .Current a,
+        .wp-pagenavi a:hover,
+        .wp-pagenavi span.current,
+        .nav-links a:hover,
+        .nav-links [class*="current"],
+        .tagcloud a:hover {
+            color: #fff !important
+        }
+
+        @media screen and (max-width:62em) {
+            .Menu li:hover .sub-menu li:hover a,
+            .Menu .sub-menu li:hover:before {
+                color: #fff !important
+            }
+        }
+
+        /**************************/
+
+        /*          Footer
+        ***************************/
+
+        /*Top*/
+
+        /*(Footer Top - Background)*/
+
+        .Footer .Top {
+            background-color: #151419
+        }
+
+        /*(Footer Top - Text Color)*/
+
+        .Footer .Top {
+            color: #818083
+        }
+
+        /*(Footer Top - Links Color)*/
+
+        .Footer .Top a {
+            color: #fff
+        }
+
+        /*(Footer Top - Links Color Hover)*/
+
+        .Footer .Top a:hover {
+            color: #ffcc00
+        }
+
+        /*Bot*/
+
+        /*(Footer Bot - Background)*/
+
+        .Footer .Bot {
+            background-color: #1a191f
+        }
+
+        /*(Footer Bot - Text Color)*/
+
+        .Footer .Bot {
+            color: #818083
+        }
+
+        /*(Footer Bot - Links Color)*/
+
+        .Footer .Bot a {
+            color: #fff
+        }
+
+        /*(Footer Bot - Links Color Hover)*/
+
+        .Footer .Bot a:hover {
+            color: #ffcc00
+        }
+
+        /****************************  NO EDIT  ****************************/
+
+        .Search input[type="text"] {
+            background-color: rgba(255, 255, 255, .2);
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2);
+            color: #fff
+        }
+
+        .Search input[type="text"]:focus {
+            background-color: rgba(255, 255, 255, .3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .5), inset 0 0 0 1px rgba(255, 255, 255, .2)
+        }
+
+        .Button,
+        a.Button,
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .BuyNow>a,
+        .wp-pagenavi .current,
+        thead tr,
+        .nav-links [class*="current"] {
+            box-shadow: inset 0 -10px 20px rgba(0, 0, 0, .3)
+        }
+
+        .Button:hover,
+        .Button:hover,
+        button:hover,
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        .BuyNow>a:hover {
+            box-shadow: none
+        }
+
+        .TPost.B .TPMvCn,
+        aside .Wdgt,
+        .SrtdBy.open .List,
+        .sol-active.sol-selection-top .sol-selection-container,
+        .trsrcbx,
+        .sub-menu,
+        .OptionBx,
+        .wp-pagenavi a,
+        .wp-pagenavi span,
+        .nav-links a,
+        .nav-links span,
+        .tagcloud a {
+            box-shadow: inset 0 0 70px rgba(0, 0, 0, .3), 0 0 20px rgba(0, 0, 0, .5)
+        }
+
+        .widget_categories>ul li:hover,
+        .sol-option:hover {
+            box-shadow: inset 0 0 70px rgba(0, 0, 0, .2)
+        }
+
+        @media screen and (max-width:62em) {
+            .sub-menu {
+                box-shadow: none
+            }
+        }
+    </style>
+</head>
+
+<body id="Tf-Wp" class="home blog logged-in admin-bar no-customize-support BdGradient">
+
+    <!--<Tf-Wp>-->
+    <div id="page" class="Tf-Wp site">
+
+        <!--<Header>-->
+        <header id="Hd" class="Header">
+            <div class="Container">
+                <div id="HdTop" class="Top">
+                    <span class="MenuBtn AATggl CXHd" data-tggl="Tf-Wp"><i></i><i></i><i></i></span>
+                    <div class="Search">
+
+                        <form role="search" method="get" class="search-form" action="http://localhost/uddown/wordpress/" autocomplete="off">
+                            <input autocomplete="off" type="search" placeholder="Pesquisar Filmes" value="" name="s" id="tr_live_search">
+                            <span class="SearchBtn TrCloseLive">
+        <label for="tr_live_search" class="fa-search AATggl" data-tggl="HdTop"></label>
+        <i><button type="button" class="AAIco-clear AATggl" data-tggl="HdTop"></button></i>
+    </span>
+                            <div class="Result anmt OptionBx" id="tr_live_search_content">
+                                <p class="trloading"><i class="fa-spinner fa-spin"></i>Loading</p>
+                            </div>
+                        </form>
+                    </div>
+                    <figure class="Logo">
+                        <a href="http://localhost/uddown/wordpress/" rel="home"><img src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/Logo-4blPh-deI-transformed.png" alt="Uddown" class="custom-logo"></a> </figure>
+                    <nav class="Menu">
+                        <ul>
+                            <li class="cat-item cat-item-29"><a href="http://localhost/uddown/wordpress/index.php/category/action/">Action</a>
+                            </li>
+                            <li class="cat-item cat-item-32"><a href="http://localhost/uddown/wordpress/index.php/category/adventure/">Adventure</a>
+                            </li>
+                            <li class="cat-item cat-item-93"><a href="http://localhost/uddown/wordpress/index.php/category/comedy/">Comedy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--</Header>-->
+
+
+        <!--<Body>-->
+        <div class="Body site-content" id="content">
+            <!--<MovieListSld>-->
+            <div class="MovieListSldCn">
+                <div class="MovieListSld owl-carousel" data-autoplay="">
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/home-team/">
+                                        <div class="Title">Home Team</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 35m</span> </div>
+                                    <div class="Description">
+                                        <p>Two years after a Super Bowl win when NFL head coach Sean Payton is suspended, he goes back to his hometown and finds himself reconnecting with his 12-year-old son by coaching his Pop Warner football team.</p>
+                                        <p
+                                            class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>, <a href="http://localhost/uddown/wordpress/index.php/category/family/" rel="category tag">Family</a></p>
+                                            <p
+                                                class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/charles-kinnane/">Charles Kinnane</a>, <a href="http://localhost/uddown/wordpress/index.php/director/daniel-kinnane/">Daniel Kinnane</a></p>
+                                                <p
+                                                    class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/chloe-fineman/">Chloe Fineman</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/gary-valentine/">Gary Valentine</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/jackie-sandler/">Jackie Sandler</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jacob-perez/">Jacob Perez</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/kevin-james/">Kevin James</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/home-team/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/c8Woa2lNy3RuWW2IVEiOud3kevh.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/exorcist-vengeance/">
+                                        <div class="Title">Exorcist Vengeance</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 27m</span> </div>
+                                    <div class="Description">
+                                        <p>When a prominent family is terrorized by a demonic force, a priest that the Vatican calls upon to do their dirty work has to root out the evil, soon realizing that the solution to this mystery is tied to his...</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/horror/" rel="category tag">Horror</a></p>
+                                        <p
+                                            class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/rebecca-matthews/">Rebecca Matthews</a>, <a href="http://localhost/uddown/wordpress/index.php/director/scott-jeffrey/">Scott Jeffrey</a></p>
+                                            <p
+                                                class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/adrienne-grant/">Adrienne Grant</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/anna-liddell/">Anna Liddell</a>,
+                                                <a
+                                                    href="http://localhost/uddown/wordpress/index.php/cast/elizabeth-mcnally/">Elizabeth McNally</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/faith-kiggundu/">Faith Kiggundu</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/michael-hoad/">Michael Hoad</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/exorcist-vengeance/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/lM6C2S073XFzAqYKHCJ3IJghcHg.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/reel-monsters/">
+                                        <div class="Title">Reel Monsters</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 15m</span> </div>
+                                    <div class="Description">
+                                        <p>Four teens are swept into the adventure of a lifetime involving a legendary creature and a mystery from the past that will change their lives forever.</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/family/" rel="category tag">Family</a>, <a href="http://localhost/uddown/wordpress/index.php/category/fantasy/" rel="category tag">Fantasy</a></p>
+                                        <p
+                                            class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/mark-polonia/">Mark Polonia</a></p>
+                                            <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/dawson-hilfiger/">Dawson Hilfiger</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/grace-hines/">Grace Hines</a>,
+                                                <a
+                                                    href="http://localhost/uddown/wordpress/index.php/cast/hannah-guss/">Hannah Guss</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/james-carolus/">James Carolus</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/lucien-limberg/">Lucien Limberg</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/reel-monsters/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/bam1NWTVU7ysBW10qKkRmeUvf2l.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/prizefighter-the-life-of-jem-belcher/">
+                                        <div class="Title">Prizefighter: The Life of Jem Belcher</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 47m</span> </div>
+                                    <div class="Description">
+                                        <p>At the turn of the 19th century, Pugilism was the sport of kings and a gifted young boxer fought his way to becoming champion of England.</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/drama/" rel="category tag">Drama</a></p>
+                                        <p
+                                            class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/daniel-graham/">Daniel Graham</a></p>
+                                            <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/jodhi-may/">Jodhi May</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/julian-glover/">Julian Glover</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/marton-csokas/">Marton Csokas</a>,
+                                                <a href="http://localhost/uddown/wordpress/index.php/cast/matt-hookings/">Matt Hookings</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/ray-winstone/">Ray Winstone</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/prizefighter-the-life-of-jem-belcher/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/2Eewgp7o5AU1xCataDmiIL2nYxd.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/code-name-banshee/">
+                                        <div class="Title">Code Name Banshee</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 33m</span> </div>
+                                    <div class="Description">
+                                        <p>Caleb, a former government assassin in hiding, who resurfaces when his protégé, the equally deadly killer known as Banshee, discovers a bounty has been placed on Caleb's head.</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/thriller/" rel="category tag">Thriller</a></p>
+                                        <p
+                                            class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/jon-keeyes/">Jon Keeyes</a></p>
+                                            <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/aleksander-vayshelboym/">Aleksander Vayshelboym</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/antonio-banderas/">Antonio Banderas</a>,
+                                                <a href="http://localhost/uddown/wordpress/index.php/cast/catherine-davis/">Catherine Davis</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/dylan-flashner/">Dylan Flashner</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jaime-king/">Jaime King</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/code-name-banshee/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/ttkibtcAjoilW1PbTIFy9U9YOdB.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/jurassic-world-dominion/">
+                                        <div class="Title">Jurassic World Dominion</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">2h 27m</span> </div>
+                                    <div class="Description">
+                                        <p>Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are
+                                            to remain the apex predators on a...</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>,
+                                            <a href="http://localhost/uddown/wordpress/index.php/category/science-fiction/" rel="category tag">Science Fiction</a></p>
+                                        <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/colin-trevorrow/">Colin Trevorrow</a></p>
+                                        <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/bd-wong/">BD Wong</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/bryce-dallas-howard/">Bryce Dallas Howard</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/campbell-scott/">Campbell Scott</a>,
+                                            <a href="http://localhost/uddown/wordpress/index.php/cast/chris-pratt/">Chris Pratt</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/dewanda-wise/">DeWanda Wise</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/jurassic-world-dominion/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/jauI01vUIkPA0xVsamGj0Gs1nNL.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/wire-room/">
+                                        <div class="Title">Wire Room</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 37m</span> </div>
+                                    <div class="Description">
+                                        <p>New recruit Justin Rosa must monitor arms-smuggling cartel member Eddie Flynn — and keep him alive at all costs. When a SWAT team descends on Flynn’s home, Rosa breaks protocol and contacts the gangster directly
+                                            to save his life. As...</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/crime/" rel="category tag">Crime</a>,
+                                            <a href="http://localhost/uddown/wordpress/index.php/category/thriller/" rel="category tag">Thriller</a></p>
+                                        <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/matt-eskandari/">Matt Eskandari</a></p>
+                                        <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/adam-huel-potter/">Adam Huel Potter</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/amber-townsend/">Amber Townsend</a>,
+                                            <a href="http://localhost/uddown/wordpress/index.php/cast/bruce-willis/">Bruce Willis</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/cameron-douglas/">Cameron Douglas</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/john-d-hickman/">John D. Hickman</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/wire-room/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/skL7c4ZhZqo1IFbMcHNrol4fvkc.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-lost-treasure/">
+                                        <div class="Title">The Lost Treasure</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 10m</span> </div>
+                                    <div class="Description">
+                                        <p>Eddie Fox, a hustling treasure hunter, finds himself forced to embark on a journey into the jungle to prevent a power hungry egomaniac from finding an ancient weapon that could destroy the island.</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>, <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>,
+                                            <a href="http://localhost/uddown/wordpress/index.php/category/family/" rel="category tag">Family</a>, <a href="http://localhost/uddown/wordpress/index.php/category/fantasy/" rel="category tag">Fantasy</a></p>
+                                        <p
+                                            class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/stella-tinucci/">Stella Tinucci</a></p>
+                                            <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/angelica-quinn/">Angelica Quinn</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/dezmond-gilla/">Dezmond Gilla</a>,
+                                                <a href="http://localhost/uddown/wordpress/index.php/cast/josh-margulies/">Josh Margulies</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/stella-tinucci/">Stella Tinucci</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/terry-bookhart/">Terry Bookhart</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-lost-treasure/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/jm2malM1MVA3AqbV0OfaLsc6aKw.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/hypochondriac/">
+                                        <div class="Title">Hypochondriac</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 36m</span> </div>
+                                    <div class="Description">
+                                        <p>A young potter’s life devolves into chaos as he loses function of his body while being haunted by the physical manifestation of his childhood trauma.</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/horror/" rel="category tag">Horror</a></p>
+                                        <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/addison-heimann/">Addison Heimann</a></p>
+                                        <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/adam-busch/">Adam Busch</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/chris-doubek/">Chris Doubek</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/devon-graye/">Devon Graye</a>,
+                                            <a href="http://localhost/uddown/wordpress/index.php/cast/madeline-zima/">Madeline Zima</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/marlene-forte/">Marlene Forte</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/hypochondriac/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/2uJ2r36wg4HB4l0eFmMmX1Thzrw.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                    <!--<TPostMv>-->
+                    <div class="TPostMv">
+                        <article class="TPost A">
+                            <header class="Container">
+                                <div class="TPMvCn">
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-adam-project/">
+                                        <div class="Title">The Adam Project</div>
+                                    </a>
+                                    <div class="Info">
+                                        <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 46m</span> </div>
+                                    <div class="Description">
+                                        <p>After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self on a mission to save the future.</p>
+                                        <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>,
+                                            <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>, <a href="http://localhost/uddown/wordpress/index.php/category/science-fiction/" rel="category tag">Science Fiction</a></p>
+                                        <p
+                                            class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/shawn-levy/">Shawn Levy</a></p>
+                                            <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/alex-mallari-jr/">Alex Mallari Jr.</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/braxton-bjerken/">Braxton Bjerken</a>,
+                                                <a href="http://localhost/uddown/wordpress/index.php/cast/catherine-keener/">Catherine Keener</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jennifer-garner/">Jennifer Garner</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/kasra-wong/">Kasra Wong</a></p>
+                                    </div>
+                                    <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-adam-project/" class="Button TPlay AAIco-play_circle_outline">
+                            Assistir Filme                        </a>
+                                </div>
+                                <div class="Image">
+                                    <figure class="Objf"><img id="img-backdrop" src="https://image.tmdb.org/t/p/w1280/ewUqXnwiRLhgmGhuksOdLgh49Ch.jpg" alt="backdrop"></figure>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <!--</TPostMv>-->
+                </div>
+            </div>
+            <!--</MovieListSld>-->
+
+            <!--<Main>-->
+            <div class="Main Container">
+
+
+                <!--<section>-->
+                <section>
+                    <div class="Top AAIco-star_border">
+                        <div class="Title">Popular</div>
+                    </div>
+                    <div class="MovieListTop owl-carousel" data-autoplay="">
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/hero-mode/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1013" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster.jpg 1013w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-692x1024.jpg 692w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-768x1137.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-155x230.jpg 155w"
+                                                sizes="(max-width: 1013px) 100vw, 1013px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Hero Mode</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/last-american-horror-show/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1400" height="2100" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster.jpg 1400w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-200x300.jpg 200w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-683x1024.jpg 683w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-768x1152.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-1024x1536.jpg 1024w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-1365x2048.jpg 1365w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-153x230.jpg 153w"
+                                                sizes="(max-width: 1400px) 100vw, 1400px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Last American Horror Show</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/harry-potter-20th-anniversary-return-to-hogwarts/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="282" height="353" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image"
+                                                alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster.jpg 282w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster-240x300.jpg 240w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster-160x200.jpg 160w"
+                                                sizes="(max-width: 282px) 100vw, 282px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Harry Potter 20th Anniversary: Return to Hogwarts</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-adam-project/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="675" height="1000" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster.jpg 675w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster-155x230.jpg 155w"
+                                                sizes="(max-width: 675px) 100vw, 675px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">The Adam Project</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/jurassic-world-dominion/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1080" height="1350" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster.jpg 1080w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-240x300.jpg 240w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-819x1024.jpg 819w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-768x960.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-160x200.jpg 160w"
+                                                sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Jurassic World Dominion</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/joker/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1180" height="1600" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster.jpg 1180w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-221x300.jpg 221w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-755x1024.jpg 755w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-768x1041.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-1133x1536.jpg 1133w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-160x217.jpg 160w"
+                                                sizes="(max-width: 1180px) 100vw, 1180px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Joker</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/prizefighter-the-life-of-jem-belcher/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1455" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image"
+                                                alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-206x300.jpg 206w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-704x1024.jpg 704w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-768x1117.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-158x230.jpg 158w"
+                                                sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Prizefighter: The Life of Jem Belcher</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/the-take-down/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1760" height="2560" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-scaled.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-scaled.jpg 1760w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-206x300.jpg 206w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-704x1024.jpg 704w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-768x1117.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-1056x1536.jpg 1056w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-1408x2048.jpg 1408w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-158x230.jpg 158w"
+                                                sizes="(max-width: 1760px) 100vw, 1760px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">The Take Down</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/spider-man-no-way-home/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1175" height="1600" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster.jpg 1175w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-220x300.jpg 220w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-752x1024.jpg 752w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-768x1046.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-1128x1536.jpg 1128w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-160x218.jpg 160w"
+                                                sizes="(max-width: 1175px) 100vw, 1175px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Spider-Man: No Way Home</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/avengers-endgame/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="680" height="971" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster.jpg 680w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster-210x300.jpg 210w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster-160x228.jpg 160w"
+                                                sizes="(max-width: 680px) 100vw, 680px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Avengers: Endgame</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/exorcist-vengeance/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1409" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-213x300.jpg 213w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-727x1024.jpg 727w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-768x1082.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-160x225.jpg 160w"
+                                                sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Exorcist Vengeance</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-old-guard/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1080" height="1600" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster.jpg 1080w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-691x1024.jpg 691w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-768x1138.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-1037x1536.jpg 1037w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-155x230.jpg 155w"
+                                                sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">The Old Guard</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/all-the-bright-places/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1648" height="2480" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster.jpg 1648w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-199x300.jpg 199w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-680x1024.jpg 680w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-768x1156.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-1021x1536.jpg 1021w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-1361x2048.jpg 1361w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-153x230.jpg 153w"
+                                                sizes="(max-width: 1648px) 100vw, 1648px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">All the Bright Places</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-lost-treasure/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="185" height="273" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-lost-treasure-186-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-lost-treasure-186-poster.jpg 185w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-lost-treasure-186-poster-156x230.jpg 156w"
+                                                sizes="(max-width: 185px) 100vw, 185px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">The Lost Treasure</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/reel-monsters/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="148" height="222" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/reel-monsters-201-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Reel Monsters</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/home-team/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="510" height="755" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster.jpg 510w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster-155x230.jpg 155w"
+                                                sizes="(max-width: 510px) 100vw, 510px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Home Team</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/greyhound/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-200x300.jpg 200w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-683x1024.jpg 683w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-768x1152.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-153x230.jpg 153w"
+                                                sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Greyhound</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/wire-room/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="300" height="445" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster.jpg 300w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster-202x300.jpg 202w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster-155x230.jpg 155w"
+                                                sizes="(max-width: 300px) 100vw, 300px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Wire Room</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/hypochondriac/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1016" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster.jpg 1016w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-694x1024.jpg 694w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-768x1134.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-156x230.jpg 156w"
+                                                sizes="(max-width: 1016px) 100vw, 1016px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Hypochondriac</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                        <!--<TPostMv>-->
+                        <div class="TPostMv">
+                            <div class="TPost B">
+                                <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/code-name-banshee/">
+                                    <div class="Image">
+                                        <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-200x300.jpg 200w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-683x1024.jpg 683w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-768x1152.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-153x230.jpg 153w"
+                                                sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                        <span class="Qlty">HD</span> </div>
+                                    <div class="Title">Code Name Banshee</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--</TPostMv>-->
+                    </div>
+                </section>
+                <!--</section>-->
+
+                <!--<TpRwCont>-->
+                <div class="TpRwCont">
+                    <!--<Main>-->
+                    <main>
+
+
+
+                        <!--<section>-->
+                        <section>
+                            <div class="Top AAIco-movie_filter">
+                                <h1 class="Title">Movie</h1>
+                                <div class="SrtdBy AADrpd">
+                                    <i class="AALink"></i>
+                                    <span>Sorted by:</span>
+                                    <ul class="List AACont">
+                                        <li class="on"><a rel="nofollow" class="fa-check" href="http://localhost/uddown/wordpress/">Latest</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="MovieList Rows AX A04 B03 C20 D03 E20 Alt">
+
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/home-team/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="510" height="755" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster.jpg 510w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/home-team-207-poster-155x230.jpg 155w"
+                                                        sizes="(max-width: 510px) 100vw, 510px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Home Team</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/home-team/">
+                                                <div class="Title">Home Team</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 35m</span> </div>
+                                            <div class="Description">
+                                                <p>Two years after a Super Bowl win when NFL head coach Sean Payton is suspended, he goes back to his hometown and finds himself reconnecting with his 12-year-old son by coaching his Pop Warner football team.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>, <a href="http://localhost/uddown/wordpress/index.php/category/family/" rel="category tag">Family</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/charles-kinnane/">Charles Kinnane</a>, <a href="http://localhost/uddown/wordpress/index.php/director/daniel-kinnane/">Daniel Kinnane</a></p>
+                                                    <p
+                                                        class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/chloe-fineman/">Chloe Fineman</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/gary-valentine/">Gary Valentine</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/jackie-sandler/">Jackie Sandler</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jacob-perez/">Jacob Perez</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/kevin-james/">Kevin James</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/exorcist-vengeance/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1409" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-213x300.jpg 213w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-727x1024.jpg 727w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-768x1082.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/exorcist-vengeance-204-poster-160x225.jpg 160w"
+                                                        sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Exorcist Vengeance</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/exorcist-vengeance/">
+                                                <div class="Title">Exorcist Vengeance</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 27m</span> </div>
+                                            <div class="Description">
+                                                <p>When a prominent family is terrorized by a demonic force, a priest that the Vatican calls upon to do their dirty work has to root out the evil, soon realizing that the solution to this mystery is tied to
+                                                    his...</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/horror/" rel="category tag">Horror</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/rebecca-matthews/">Rebecca Matthews</a>, <a href="http://localhost/uddown/wordpress/index.php/director/scott-jeffrey/">Scott Jeffrey</a></p>
+                                                    <p
+                                                        class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/adrienne-grant/">Adrienne Grant</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/anna-liddell/">Anna Liddell</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/elizabeth-mcnally/">Elizabeth McNally</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/faith-kiggundu/">Faith Kiggundu</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/michael-hoad/">Michael Hoad</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/reel-monsters/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="148" height="222" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/reel-monsters-201-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                    /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Reel Monsters</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/reel-monsters/">
+                                                <div class="Title">Reel Monsters</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 15m</span> </div>
+                                            <div class="Description">
+                                                <p>Four teens are swept into the adventure of a lifetime involving a legendary creature and a mystery from the past that will change their lives forever.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/family/" rel="category tag">Family</a>, <a href="http://localhost/uddown/wordpress/index.php/category/fantasy/" rel="category tag">Fantasy</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/mark-polonia/">Mark Polonia</a></p>
+                                                    <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/dawson-hilfiger/">Dawson Hilfiger</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/grace-hines/">Grace Hines</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/hannah-guss/">Hannah Guss</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/james-carolus/">James Carolus</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/lucien-limberg/">Lucien Limberg</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/prizefighter-the-life-of-jem-belcher/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1455" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image"
+                                                        alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-206x300.jpg 206w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-704x1024.jpg 704w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-768x1117.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/prizefighter-the-life-of-jem-belcher-198-poster-158x230.jpg 158w"
+                                                        sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Prizefighter: The Life of Jem Belcher</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/prizefighter-the-life-of-jem-belcher/">
+                                                <div class="Title">Prizefighter: The Life of Jem Belcher</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 47m</span> </div>
+                                            <div class="Description">
+                                                <p>At the turn of the 19th century, Pugilism was the sport of kings and a gifted young boxer fought his way to becoming champion of England.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/drama/" rel="category tag">Drama</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/daniel-graham/">Daniel Graham</a></p>
+                                                    <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/jodhi-may/">Jodhi May</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/julian-glover/">Julian Glover</a>,
+                                                        <a
+                                                            href="http://localhost/uddown/wordpress/index.php/cast/marton-csokas/">Marton Csokas</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/matt-hookings/">Matt Hookings</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/ray-winstone/">Ray Winstone</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/code-name-banshee/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-200x300.jpg 200w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-683x1024.jpg 683w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-768x1152.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/code-name-banshee-195-poster-153x230.jpg 153w"
+                                                        sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Code Name Banshee</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/code-name-banshee/">
+                                                <div class="Title">Code Name Banshee</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 33m</span> </div>
+                                            <div class="Description">
+                                                <p>Caleb, a former government assassin in hiding, who resurfaces when his protégé, the equally deadly killer known as Banshee, discovers a bounty has been placed on Caleb's head.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/thriller/" rel="category tag">Thriller</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/jon-keeyes/">Jon Keeyes</a></p>
+                                                    <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/aleksander-vayshelboym/">Aleksander Vayshelboym</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/antonio-banderas/">Antonio Banderas</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/catherine-davis/">Catherine Davis</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/dylan-flashner/">Dylan Flashner</a>,
+                                                        <a
+                                                            href="http://localhost/uddown/wordpress/index.php/cast/jaime-king/">Jaime King</a>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/jurassic-world-dominion/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1080" height="1350" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt=""
+                                                        loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster.jpg 1080w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-240x300.jpg 240w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-819x1024.jpg 819w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-768x960.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/jurassic-world-dominion-192-poster-160x200.jpg 160w"
+                                                        sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Jurassic World Dominion</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/jurassic-world-dominion/">
+                                                <div class="Title">Jurassic World Dominion</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">2h 27m</span> </div>
+                                            <div class="Description">
+                                                <p>Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings
+                                                    are to remain the apex predators on a...</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/science-fiction/" rel="category tag">Science Fiction</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/colin-trevorrow/">Colin Trevorrow</a></p>
+                                                <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/bd-wong/">BD Wong</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/bryce-dallas-howard/">Bryce Dallas Howard</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/campbell-scott/">Campbell Scott</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/chris-pratt/">Chris Pratt</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/dewanda-wise/">DeWanda Wise</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/wire-room/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="300" height="445" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster.jpg 300w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster-202x300.jpg 202w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/wire-room-189-poster-155x230.jpg 155w"
+                                                        sizes="(max-width: 300px) 100vw, 300px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Wire Room</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/wire-room/">
+                                                <div class="Title">Wire Room</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 37m</span> </div>
+                                            <div class="Description">
+                                                <p>New recruit Justin Rosa must monitor arms-smuggling cartel member Eddie Flynn — and keep him alive at all costs. When a SWAT team descends on Flynn’s home, Rosa breaks protocol and contacts the gangster
+                                                    directly to save his life. As...</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/crime/" rel="category tag">Crime</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/thriller/" rel="category tag">Thriller</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/matt-eskandari/">Matt Eskandari</a></p>
+                                                <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/adam-huel-potter/">Adam Huel Potter</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/amber-townsend/">Amber Townsend</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/bruce-willis/">Bruce Willis</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/cameron-douglas/">Cameron Douglas</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/john-d-hickman/">John D. Hickman</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-lost-treasure/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="185" height="273" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-lost-treasure-186-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-lost-treasure-186-poster.jpg 185w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-lost-treasure-186-poster-156x230.jpg 156w"
+                                                        sizes="(max-width: 185px) 100vw, 185px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">The Lost Treasure</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-lost-treasure/">
+                                                <div class="Title">The Lost Treasure</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 10m</span> </div>
+                                            <div class="Description">
+                                                <p>Eddie Fox, a hustling treasure hunter, finds himself forced to embark on a journey into the jungle to prevent a power hungry egomaniac from finding an ancient weapon that could destroy the island.</p>
+                                                <p
+                                                    class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>, <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/family/" rel="category tag">Family</a>, <a href="http://localhost/uddown/wordpress/index.php/category/fantasy/" rel="category tag">Fantasy</a></p>
+                                                    <p
+                                                        class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/stella-tinucci/">Stella Tinucci</a></p>
+                                                        <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/angelica-quinn/">Angelica Quinn</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/dezmond-gilla/">Dezmond Gilla</a>,
+                                                            <a href="http://localhost/uddown/wordpress/index.php/cast/josh-margulies/">Josh Margulies</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/stella-tinucci/">Stella Tinucci</a>,
+                                                            <a
+                                                                href="http://localhost/uddown/wordpress/index.php/cast/terry-bookhart/">Terry Bookhart</a>
+                                                        </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/hypochondriac/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1016" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster.jpg 1016w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-694x1024.jpg 694w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-768x1134.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hypochondriac-174-poster-156x230.jpg 156w"
+                                                        sizes="(max-width: 1016px) 100vw, 1016px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Hypochondriac</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/hypochondriac/">
+                                                <div class="Title">Hypochondriac</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 36m</span> </div>
+                                            <div class="Description">
+                                                <p>A young potter’s life devolves into chaos as he loses function of his body while being haunted by the physical manifestation of his childhood trauma.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/horror/" rel="category tag">Horror</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/addison-heimann/">Addison Heimann</a></p>
+                                                <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/adam-busch/">Adam Busch</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/chris-doubek/">Chris Doubek</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/devon-graye/">Devon Graye</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/madeline-zima/">Madeline Zima</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/marlene-forte/">Marlene Forte</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-adam-project/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="675" height="1000" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster.jpg 675w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-adam-project-166-poster-155x230.jpg 155w"
+                                                        sizes="(max-width: 675px) 100vw, 675px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">The Adam Project</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-adam-project/">
+                                                <div class="Title">The Adam Project</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 46m</span> </div>
+                                            <div class="Description">
+                                                <p>After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self on a mission to save the future.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>, <a href="http://localhost/uddown/wordpress/index.php/category/science-fiction/" rel="category tag">Science Fiction</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/shawn-levy/">Shawn Levy</a></p>
+                                                    <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/alex-mallari-jr/">Alex Mallari Jr.</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/braxton-bjerken/">Braxton Bjerken</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/catherine-keener/">Catherine Keener</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jennifer-garner/">Jennifer Garner</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/kasra-wong/">Kasra Wong</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-old-guard/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1080" height="1600" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster.jpg 1080w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-691x1024.jpg 691w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-768x1138.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-1037x1536.jpg 1037w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-old-guard-162-poster-155x230.jpg 155w"
+                                                        sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">The Old Guard</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/the-old-guard/">
+                                                <div class="Title">The Old Guard</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2020</span><span class="Qlty">HD</span><span class="Time">2h 5m</span> </div>
+                                            <div class="Description">
+                                                <p>Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/fantasy/" rel="category tag">Fantasy</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/abdelghafar-essalfi/">Abdelghafar Essalfi</a>, <a href="http://localhost/uddown/wordpress/index.php/director/abigail-manson/">Abigail Manson</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/aisling-hughes/">Aisling Hughes</a>, <a href="http://localhost/uddown/wordpress/index.php/director/andy-madden/">Andy Madden</a>, <a href="http://localhost/uddown/wordpress/index.php/director/ashley-turner/">Ashley Turner</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/behnam-taheri/">Behnam Taheri</a>, <a href="http://localhost/uddown/wordpress/index.php/director/claire-stratton/">Claire Stratton</a>,
+                                                    <a
+                                                        href="http://localhost/uddown/wordpress/index.php/director/david-keadell/">David Keadell</a>, <a href="http://localhost/uddown/wordpress/index.php/director/gina-prince-bythewood/">Gina Prince-Bythewood</a>, <a href="http://localhost/uddown/wordpress/index.php/director/hamid-ait-timaghrit/">Hamid Ait Timaghrit</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/director/jackson-ezard/">Jackson Ezard</a>, <a href="http://localhost/uddown/wordpress/index.php/director/jeff-habberstad/">Jeff Habberstad</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/director/mouataz-guermah/">Mouataz Guermah</a>, <a href="http://localhost/uddown/wordpress/index.php/director/mouhssine-el-badaoui/">Mouhssine El Badaoui</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/director/ranya-targhy/">Ranya Targhy</a>, <a href="http://localhost/uddown/wordpress/index.php/director/robert-madden/">Robert Madden</a>,
+                                                        <a
+                                                            href="http://localhost/uddown/wordpress/index.php/director/roxanne-cuenca/">Roxanne Cuenca</a>, <a href="http://localhost/uddown/wordpress/index.php/director/sussanah-madden/">Sussanah Madden</a>, <a href="http://localhost/uddown/wordpress/index.php/director/talal-el-moustaghfir/">Talal El Moustaghfir</a>,
+                                                            <a href="http://localhost/uddown/wordpress/index.php/director/toby-hefferman/">Toby Hefferman</a></p>
+                                                            <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/anamaria-marinca/">Anamaria Marinca</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/charlize-theron/">Charlize Theron</a>,
+                                                                <a href="http://localhost/uddown/wordpress/index.php/cast/chiwetel-ejiofor/">Chiwetel Ejiofor</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/harry-melling/">Harry Melling</a>,
+                                                                <a href="http://localhost/uddown/wordpress/index.php/cast/kiki-layne/">KiKi Layne</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/joker/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1180" height="1600" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster.jpg 1180w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-221x300.jpg 221w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-755x1024.jpg 755w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-768x1041.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-1133x1536.jpg 1133w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/joker-159-poster-160x217.jpg 160w"
+                                                        sizes="(max-width: 1180px) 100vw, 1180px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Joker</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/08/joker/">
+                                                <div class="Title">Joker</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2019</span><span class="Qlty">HD</span><span class="Time">2h 2m</span> </div>
+                                            <div class="Description">
+                                                <p>During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/crime/" rel="category tag">Crime</a>, <a href="http://localhost/uddown/wordpress/index.php/category/drama/" rel="category tag">Drama</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/thriller/" rel="category tag">Thriller</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/carolina-jimenez/">Carolina Jiménez</a>, <a href="http://localhost/uddown/wordpress/index.php/director/david-webb/">David Webb</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/jeremy-marks/">Jeremy Marks</a>, <a href="http://localhost/uddown/wordpress/index.php/director/renee-burke/">Renee Burke</a>, <a href="http://localhost/uddown/wordpress/index.php/director/ryan-robert-howard/">Ryan Robert Howard</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/todd-phillips/">Todd Phillips</a></p>
+                                                <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/bill-camp/">Bill Camp</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/brett-cullen/">Brett Cullen</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/frances-conroy/">Frances Conroy</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/glenn-fleshler/">Glenn Fleshler</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/joaquin-phoenix/">Joaquin Phoenix</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/the-take-down/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1760" height="2560" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-scaled.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-scaled.jpg 1760w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-206x300.jpg 206w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-704x1024.jpg 704w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-768x1117.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-1056x1536.jpg 1056w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-1408x2048.jpg 1408w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/the-take-down-156-poster-158x230.jpg 158w"
+                                                        sizes="(max-width: 1760px) 100vw, 1760px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">The Take Down</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/the-take-down/">
+                                                <div class="Title">The Take Down</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2019</span><span class="Qlty">HD</span><span class="Time">1h 32m</span> </div>
+                                            <div class="Description">
+                                                <p>When Jack, a hit man from London, gets given his life back and the opportunity to save his daughter, it becomes a race against time to kill or be killed.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/david-newton/">David Newton</a></p>
+                                                <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/aiden-brady/">Aiden Brady</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/connie-jenkins-greig/">Connie Jenkins-Greig</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/conor-boru/">Conor Boru</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jack-jagodka/">Jack Jagodka</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jean-paul-ly/">Jean-Paul Ly</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/harry-potter-20th-anniversary-return-to-hogwarts/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="282" height="353" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image"
+                                                        alt="" loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster.jpg 282w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster-240x300.jpg 240w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/harry-potter-20th-anniversary-return-to-hogwarts-153-poster-160x200.jpg 160w"
+                                                        sizes="(max-width: 282px) 100vw, 282px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Harry Potter 20th Anniversary: Return to Hogwarts</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/harry-potter-20th-anniversary-return-to-hogwarts/">
+                                                <div class="Title">Harry Potter 20th Anniversary: Return to Hogwarts</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2022</span><span class="Qlty">HD</span><span class="Time">1h 43m</span> </div>
+                                            <div class="Description">
+                                                <p>An enchanting making-of story told through all-new in-depth interviews and cast conversations, inviting fans on a magical first-person journey through one of the most beloved film franchises of all time.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/documentary/" rel="category tag">Documentary</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/casey-patterson/">Casey Patterson</a>, <a href="http://localhost/uddown/wordpress/index.php/director/eran-creevy/">Eran Creevy</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/giorgio-testi/">Giorgio Testi</a>, <a href="http://localhost/uddown/wordpress/index.php/director/joe-pearlman/">Joe Pearlman</a></p>
+                                                <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/bonnie-wright/">Bonnie Wright</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/daniel-radcliffe/">Daniel Radcliffe</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/emma-watson/">Emma Watson</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/evanna-lynch/">Evanna Lynch</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/helena-bonham-carter/">Helena Bonham Carter</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/all-the-bright-places/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1648" height="2480" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt=""
+                                                        loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster.jpg 1648w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-199x300.jpg 199w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-680x1024.jpg 680w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-768x1156.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-1021x1536.jpg 1021w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-1361x2048.jpg 1361w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/all-the-bright-places-150-poster-153x230.jpg 153w"
+                                                        sizes="(max-width: 1648px) 100vw, 1648px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">All the Bright Places</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/all-the-bright-places/">
+                                                <div class="Title">All the Bright Places</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2020</span><span class="Qlty">HD</span><span class="Time">1h 48m</span> </div>
+                                            <div class="Description">
+                                                <p>Two teens facing personal struggles form a powerful bond as they embark on a cathartic journey chronicling the wonders of Indiana.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/drama/" rel="category tag">Drama</a>, <a href="http://localhost/uddown/wordpress/index.php/category/romance/" rel="category tag">Romance</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/brett-haley/">Brett Haley</a></p>
+                                                    <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/alexandra-shipp/">Alexandra Shipp</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/elle-fanning/">Elle Fanning</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/felix-mallard/">Felix Mallard</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/justice-smith/">Justice Smith</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/keegan-michael-key/">Keegan-Michael Key</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/spider-man-no-way-home/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1175" height="1600" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt=""
+                                                        loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster.jpg 1175w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-220x300.jpg 220w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-752x1024.jpg 752w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-768x1046.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-1128x1536.jpg 1128w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/spider-man-no-way-home-147-poster-160x218.jpg 160w"
+                                                        sizes="(max-width: 1175px) 100vw, 1175px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Spider-Man: No Way Home</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/spider-man-no-way-home/">
+                                                <div class="Title">Spider-Man: No Way Home</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2021</span><span class="Qlty">HD</span><span class="Time">2h 28m</span> </div>
+                                            <div class="Description">
+                                                <p>Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing
+                                                    him to discover what it...</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/science-fiction/" rel="category tag">Science Fiction</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/brian-avery-galligan/">Brian Avery Galligan</a>, <a href="http://localhost/uddown/wordpress/index.php/director/david-h-venghaus-jr/">David H. Venghaus Jr.</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/george-cottle/">George Cottle</a>, <a href="http://localhost/uddown/wordpress/index.php/director/jon-watts/">Jon Watts</a></p>
+                                                <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/alfred-molina/">Alfred Molina</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/benedict-cumberbatch/">Benedict Cumberbatch</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/benedict-wong/">Benedict Wong</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jacob-batalon/">Jacob Batalon</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/jamie-foxx/">Jamie Foxx</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/last-american-horror-show/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1400" height="2100" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt=""
+                                                        loading="lazy" srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster.jpg 1400w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-200x300.jpg 200w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-683x1024.jpg 683w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-768x1152.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-1024x1536.jpg 1024w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-1365x2048.jpg 1365w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/last-american-horror-show-144-poster-153x230.jpg 153w"
+                                                        sizes="(max-width: 1400px) 100vw, 1400px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Last American Horror Show</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/last-american-horror-show/">
+                                                <div class="Title">Last American Horror Show</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2018</span><span class="Qlty">HD</span><span class="Time">1h 22m</span> </div>
+                                            <div class="Description">
+                                                <p>A trifecta of 80s throwback terror with mauling monsters, home invasions gone haywire and stomach-turning human sacrifice.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>, <a href="http://localhost/uddown/wordpress/index.php/category/horror/" rel="category tag">Horror</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/michael-s-rodriguez/">Michael S. Rodriguez</a></p>
+                                                    <p class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/arch-hall-jr/">Arch Hall Jr.</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/felissa-rose/">Felissa Rose</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/jim-van-bebber/">Jim Van Bebber</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/lynn-lowry/">Lynn Lowry</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/robert-allen-mukes/">Robert Allen Mukes</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/hero-mode/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1013" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster.jpg 1013w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-203x300.jpg 203w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-692x1024.jpg 692w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-768x1137.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/hero-mode-141-poster-155x230.jpg 155w"
+                                                        sizes="(max-width: 1013px) 100vw, 1013px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Hero Mode</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/hero-mode/">
+                                                <div class="Title">Hero Mode</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2021</span><span class="Qlty">HD</span><span class="Time">1h 28m</span> </div>
+                                            <div class="Description">
+                                                <p>A teenage coding genius has just 30 days to create the world's greatest video game or his family loses everything. No pressure.</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/comedy/" rel="category tag">Comedy</a>, <a href="http://localhost/uddown/wordpress/index.php/category/family/" rel="category tag">Family</a></p>
+                                                <p
+                                                    class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/a-j-tesler/">A.J. Tesler</a>, <a href="http://localhost/uddown/wordpress/index.php/director/cameron-h-price/">Cameron H. Price</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/gustavo-pena/">Gustavo Peña</a>, <a href="http://localhost/uddown/wordpress/index.php/director/hannah-myvanwy-driscoll/">Hannah Myvanwy Driscoll</a></p>
+                                                    <p
+                                                        class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/chris-carpenter/">Chris Carpenter</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/creed-bratton/">Creed Bratton</a>,
+                                                        <a href="http://localhost/uddown/wordpress/index.php/cast/erik-griffin/">Erik Griffin</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/indiana-massara/">Indiana Massara</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/kimia-behpoornia/">Kimia Behpoornia</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/avengers-endgame/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="680" height="971" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster.jpg 680w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster-210x300.jpg 210w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/avengers-endgame-138-poster-160x228.jpg 160w"
+                                                        sizes="(max-width: 680px) 100vw, 680px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Avengers: Endgame</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/avengers-endgame/">
+                                                <div class="Title">Avengers: Endgame</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2019</span><span class="Qlty">HD</span><span class="Time">3h 1m</span> </div>
+                                            <div class="Description">
+                                                <p>After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order
+                                                    to undo Thanos' actions...</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/adventure/" rel="category tag">Adventure</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/science-fiction/" rel="category tag">Science Fiction</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/anthony-russo/">Anthony Russo</a>, <a href="http://localhost/uddown/wordpress/index.php/director/chris-castaldi/">Chris Castaldi</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/edward-catley/">Edward Catley</a>, <a href="http://localhost/uddown/wordpress/index.php/director/joe-russo/">Joe Russo</a>, <a href="http://localhost/uddown/wordpress/index.php/director/mark-johnston/">Mark Johnston</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/paul-schneider/">Paul Schneider</a>, <a href="http://localhost/uddown/wordpress/index.php/director/simon-downes/">Simon Downes</a></p>
+                                                <p
+                                                    class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/benedict-cumberbatch/">Benedict Cumberbatch</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/chadwick-boseman/">Chadwick Boseman</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/cast/chris-evans/">Chris Evans</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/chris-hemsworth/">Chris Hemsworth</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/don-cheadle/">Don Cheadle</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                                <!--<TPostMv>-->
+                                <li class="TPostMv">
+                                    <article class="TPost B">
+                                        <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/greyhound/">
+                                            <div class="Image">
+                                                <figure class="Objf TpMvPlay AAIco-play_arrow"><img width="1000" height="1500" src="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster.jpg" class="attachment-img-mov-md size-img-mov-md wp-post-image" alt="" loading="lazy"
+                                                        srcset="http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster.jpg 1000w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-200x300.jpg 200w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-683x1024.jpg 683w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-768x1152.jpg 768w, http://localhost/uddown/wordpress/wp-content/uploads/2022/09/greyhound-135-poster-153x230.jpg 153w"
+                                                        sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+                                                <span class="Qlty">HD</span> </div>
+                                            <div class="Title">Greyhound</div>
+                                        </a>
+                                        <div class="TPMvCn">
+                                            <a href="http://localhost/uddown/wordpress/index.php/2022/09/07/greyhound/">
+                                                <div class="Title">Greyhound</div>
+                                            </a>
+                                            <div class="Info">
+                                                <span class="Date">2020</span><span class="Qlty">HD</span><span class="Time">1h 31m</span> </div>
+                                            <div class="Description">
+                                                <p>A first-time captain leads a convoy of allied ships carrying thousands of soldiers across the treacherous waters of the “Black Pit” to the front lines of WW2. With no air cover protection for 5 days, the
+                                                    captain and his convoy...</p>
+                                                <p class="Genre"><span>Genre:</span> <a href="http://localhost/uddown/wordpress/index.php/category/action/" rel="category tag">Action</a>, <a href="http://localhost/uddown/wordpress/index.php/category/drama/" rel="category tag">Drama</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/category/war/" rel="category tag">War</a></p>
+                                                <p class="Director"><span>Director:</span> <a href="http://localhost/uddown/wordpress/index.php/director/aaron-schneider/">Aaron Schneider</a>, <a href="http://localhost/uddown/wordpress/index.php/director/kim-h-winther/">Kim H. Winther</a>,
+                                                    <a href="http://localhost/uddown/wordpress/index.php/director/luca-kouimelis/">Luca Kouimelis</a>, <a href="http://localhost/uddown/wordpress/index.php/director/steven-quale/">Steven Quale</a></p>
+                                                <p
+                                                    class="Cast"><span>Cast:</span> <a href="http://localhost/uddown/wordpress/index.php/cast/chet-hanks/">Chet Hanks</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/elisabeth-shue/">Elisabeth Shue</a>,
+                                                    <a
+                                                        href="http://localhost/uddown/wordpress/index.php/cast/josh-wiggins/">Josh Wiggins</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/karl-glusman/">Karl Glusman</a>, <a href="http://localhost/uddown/wordpress/index.php/cast/manuel-garcia-rulfo/">Manuel Garcia-Rulfo</a></p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!--</TPostMv>-->
+                            </ul>
+
+                        </section>
+                        <!--</section>-->
+
+
+
+
+                    </main>
+                    <!--</Main>-->
+                </div>
+                <!--</TpRwCont>-->
+
+
+            </div>
+            <!--</Main>-->
+
+        </div>
+        <!--</Body>-->
+
+        <!--<Footer>-->
+        <footer class="Footer">
+            <div class="Bot">
+                <div class="Container">
+                    <p><a target="_blank" href="http://imdbfilm.top/">Themes WordPress Movie</a></p>
+                </div>
+            </div>
+        </footer>
+        <!--</Footer>-->
+
+    </div>
+    <!--</Tf-Wp>-->
+
+    <script type='text/javascript' src='http://localhost/uddown/wordpress/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
+    <script type='text/javascript' src='http://localhost/uddown/wordpress/wp-includes/js/admin-bar.min.js?ver=6.0.2' id='admin-bar-js'></script>
+    <script type='text/javascript' src='http://localhost/uddown/wordpress/wp-content/themes/toroflix/js/owl.carousel.min.js?ver=1.0' id='toroflix-carousel-js'></script>
+    <script type='text/javascript' id='trlivesearch-js-extra'>
+        /* <![CDATA[ */
+        var trlivesearch = {
+            "url": "http:\/\/localhost\/uddown\/wordpress\/wp-admin\/admin-ajax.php",
+            "nonce": "48d20163e0",
+            "action": "tr_livearch",
+            "loading": "Loading"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='http://localhost/uddown/wordpress/wp-content/themes/toroflix/js/ajaxlivesearch.min.js?ver=1.0' id='trlivesearch-js'></script>
+    <script type='text/javascript' src='http://localhost/uddown/wordpress/wp-content/themes/toroflix/js/functions.js?ver=1.0' id='toroflix-functions-js'></script>
+    <script type="text/javascript">
+        (function() {
+            var request, b = document.body,
+                c = 'className',
+                cs = 'customize-support',
+                rcs = new RegExp('(^|\\s+)(no-)?' + cs + '(\\s+|$)');
+
+            request = true;
+
+            b[c] = b[c].replace(rcs, ' ');
+            // The customizer requires postMessage and CORS (if the site is cross domain).
+            b[c] += (window.postMessage && request ? ' ' : ' no-') + cs;
+        }());
+    </script>
+    <div id="wpadminbar" class="nojq nojs">
+        <a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+        <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+            <ul id='wp-admin-bar-root-default' class="ab-top-menu">
+                <li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='http://localhost/uddown/wordpress/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a>
+                    <div class="ab-sub-wrapper">
+                        <ul id='wp-admin-bar-wp-logo-default' class="ab-submenu">
+                            <li id='wp-admin-bar-about'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/about.php'>About WordPress</a></li>
+                        </ul>
+                        <ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu">
+                            <li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li>
+                            <li id='wp-admin-bar-documentation'><a class='ab-item' href='https://wordpress.org/support/'>Documentation</a></li>
+                            <li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/forums/'>Support</a></li>
+                            <li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='http://localhost/uddown/wordpress/wp-admin/'>Uddown</a>
+                    <div class="ab-sub-wrapper">
+                        <ul id='wp-admin-bar-site-name-default' class="ab-submenu">
+                            <li id='wp-admin-bar-dashboard'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/'>Dashboard</a></li>
+                        </ul>
+                        <ul id='wp-admin-bar-appearance' class="ab-submenu">
+                            <li id='wp-admin-bar-themes'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/themes.php'>Themes</a></li>
+                            <li id='wp-admin-bar-widgets'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/widgets.php'>Widgets</a></li>
+                            <li id='wp-admin-bar-menus'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/nav-menus.php'>Menus</a></li>
+                            <li id='wp-admin-bar-background' class="hide-if-customize"><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/themes.php?page=custom-background'>Background</a></li>
+                            <li id='wp-admin-bar-header' class="hide-if-customize"><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/themes.php?page=custom-header'>Header</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%2Fuddown%2Fwordpress%2F'>Customize</a></li>
+                <li id='wp-admin-bar-comments'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/edit-comments.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li>
+                <li
+                    id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true" href='http://localhost/uddown/wordpress/wp-admin/post-new.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label">New</span></a>
+                    <div class="ab-sub-wrapper">
+                        <ul id='wp-admin-bar-new-content-default' class="ab-submenu">
+                            <li id='wp-admin-bar-new-post'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/post-new.php'>Post</a></li>
+                            <li id='wp-admin-bar-new-media'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/media-new.php'>Media</a></li>
+                            <li id='wp-admin-bar-new-page'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/post-new.php?post_type=page'>Page</a></li>
+                            <li id='wp-admin-bar-new-user'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/user-new.php'>User</a></li>
+                        </ul>
+                    </div>
+                    </li>
+            </ul>
+            <ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu">
+                <li id='wp-admin-bar-search' class="admin-bar-search">
+                    <div class="ab-item ab-empty-item" tabindex="-1">
+                        <form action="http://localhost/uddown/wordpress/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"
+                            /></form>
+                    </div>
+                </li>
+                <li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='http://localhost/uddown/wordpress/wp-admin/profile.php'>Howdy, <span class="display-name">admin</span><img alt='' src='http://0.gravatar.com/avatar/f9da2253f450bbbad2a9ad2216ede74a?s=26&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f9da2253f450bbbad2a9ad2216ede74a?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy'/></a>
+                    <div
+                        class="ab-sub-wrapper">
+                        <ul id='wp-admin-bar-user-actions' class="ab-submenu">
+                            <li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='http://localhost/uddown/wordpress/wp-admin/profile.php'><img alt='' src='http://0.gravatar.com/avatar/f9da2253f450bbbad2a9ad2216ede74a?s=64&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f9da2253f450bbbad2a9ad2216ede74a?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span class='display-name'>admin</span></a></li>
+                            <li
+                                id='wp-admin-bar-edit-profile'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-admin/profile.php'>Edit Profile</a></li>
+                <li id='wp-admin-bar-logout'><a class='ab-item' href='http://localhost/uddown/wordpress/wp-login.php?action=logout&#038;_wpnonce=acb7da6ca8'>Log Out</a></li>
+                </ul>
+        </div>
+        </li>
+        </ul>
+    </div>
+    <a class="screen-reader-shortcut" href="http://localhost/uddown/wordpress/wp-login.php?action=logout&#038;_wpnonce=acb7da6ca8">Log Out</a>
+    </div>
+
+    <!--[ToroThemes]><CSS Framework v6.0><[contacto@torothemes.com]-->
+
+</body>
+
+</html>
